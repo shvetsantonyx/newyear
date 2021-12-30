@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Вход</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+      
+    <div class="form-error">{{ form.non_field_errors }}</div>
+
+{% for f in form %}
+<p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+<div class="form-error">{{ f.errors }}</div>
+{% endfor %}
+    
+        <button type="submit">Войти</button>
+    </form>
+    <div>
+        <button style="margin-top: 10px;">
+            <a href="{% url 'register' %}">Регистрация</a>
+          </button>
+    </div>
+</body>
+</html>

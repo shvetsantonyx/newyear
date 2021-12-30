@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>С новым годом!</title>
+  <link type="text/css" href="{% static 'newyear/css/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+  {% if request.user.is_authenticated %}
+    <li class="last"> {{ user.username }} | <a href="{% url 'logout' %}">Выйти</a></li>
+    <div>
+        <link class="roman"><div class="roman"></div></a></link>
+    </div>
+
+  {% else %}
+    <button><a href="{% url 'register' %}">Регистрация</a></button>
+    <button><a href="{% url 'login' %}">Войти</a></button>
+    <li class="general"><div class="general"></div></a></li>
+    
+  {% endif %}
+
+  <div>
+    <h1 style="margin-left: 10px;">С новым годом, Рома!</h1>
+  </div>
+
+</body>
+</html>

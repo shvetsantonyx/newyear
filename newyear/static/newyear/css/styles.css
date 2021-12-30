@@ -1,0 +1,47 @@
+html, body {
+	font-family: 'Arial';
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	color: #444;
+}
+
+a {
+	color: #0059b2;
+	text-decoration: none;
+}
+a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+.igor {
+	background: url('../images/igor.png') no-repeat 10px 10px;
+	width: 500px;
+	height: 400px;
+}
+
+.alya {
+	background: url('../images/alya.png') no-repeat 10px 10px;
+	width: 500px;
+	height: 400px;
+}
+
+.arti {
+	background: url('../images/arti.png') no-repeat 10px 10px;
+	width: 500px;
+	height: 200px;
+}
+
+.roman {
+	background: url('../images/roma.png') no-repeat 10px 10px;
+	width: 700px;
+	height: 500px;
+}
+
+.general {
+	background: url('../images/general.gif') no-repeat 10px 10px;
+	width: 700px;
+	height: 500px;
+}
