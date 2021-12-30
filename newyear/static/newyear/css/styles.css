@@ -40,6 +40,12 @@ a:hover {
 	height: 500px;
 }
 
+.anton {
+	background: url('../images/anton.png') no-repeat 10px 10px;
+	width: 950px;
+	height: 500px;
+}
+
 .general {
 	background: url('../images/general.gif') no-repeat 10px 10px;
 	width: 700px;

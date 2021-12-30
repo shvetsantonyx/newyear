@@ -12,6 +12,7 @@ names_igor = ['Игорь', 'Igor']
 names_alya = ['Аля', 'Алевтина', 'Alya', 'Alevtina']
 names_arti = ['Артем', 'Артём', 'Arti', 'Artyom']
 names_roma = ['Рома', 'Roma', 'Roman', 'Роман']
+names_anton = ['Антон', 'Тоха', 'Антоха', 'Tony', 'Anton', 'Antony']
 
 def homepage(request):
     return render(request, 'newyear/homepage.html')
@@ -38,6 +39,8 @@ class RegisterUser(CreateView):
             return redirect('roma')
         elif self.request.user.username.capitalize() in names_arti:
             return redirect('arti')
+        elif self.request.user.username.capitalize() in names_anton:
+            return redirect('anton')
         else:
             return redirect('homepage')
 
@@ -63,6 +66,8 @@ class LoginUser(LoginView):
             return reverse_lazy('roma')
         elif self.request.user.username.capitalize() in names_arti:
             return reverse_lazy('arti')
+        elif self.request.user.username.capitalize() in names_anton:
+            return reverse_lazy('anton')
         else:
             return reverse_lazy('homepage')
 
@@ -82,3 +87,6 @@ def roma(request):
 
 def arti(request):
     return render(request, 'newyear/arti.html')
+
+def anton(request):
+    return render(request, 'newyear/anton.html')

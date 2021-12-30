@@ -11,4 +11,5 @@ urlpatterns = [
     path('roma/', roma, name='roma'),
     path('arti/', arti, name='arti'),
     path('alya/', alya, name='alya'),
+    path('anton/', anton, name='anton'),
 ]
