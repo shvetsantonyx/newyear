@@ -8,11 +8,11 @@
 <body>
   {% if request.user.is_authenticated %}
     <li class="last"> {{ user.username }} | <a href="{% url 'logout' %}">Выйти</a></li>
-    <link class="anton"><div class="anton"></div></a></link>
+    <link class="anton"><div class="anton"></div></link>
   {% else %}
     <button><a href="{% url 'register' %}">Регистрация</a></button>
     <button><a href="{% url 'login' %}">Войти</a></button>
-    <li class="general"><div class="general"></div></a></li>
+    <li class="general"><div class="general"></div></li>
     
   {% endif %}
 
